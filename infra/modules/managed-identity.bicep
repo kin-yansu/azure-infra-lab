@@ -1,5 +1,4 @@
-resource managedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2025-11-01' = {
-  name: 'kinfatman0001toymid'
+resource managedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2024-11-30' = {  name: 'kinfatman0001toymid'
   location: 'japaneast'
 }
 output resourceId string = managedIdentity.id

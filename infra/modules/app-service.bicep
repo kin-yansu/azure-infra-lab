@@ -70,7 +70,8 @@ resource stagingSlot 'Microsoft.Web/sites/slots@2025-03-01' = {
         siteConfig: {
             linuxFxVersion: 'DOCKER|kinfatman0001toyacr.azurecr.io/kinfatman0001toyapp:v1'
             acrUseManagedIdentityCreds: true
-            acrUserManagedIdentityID: managedIdentityClientId            alwaysOn: true
+            acrUserManagedIdentityID: managedIdentityClientId
+            alwaysOn: true
             appSettings: [
                 {
                     name: 'DOCKER_REGISTRY_SERVER_URL'
